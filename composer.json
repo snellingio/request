@@ -1,24 +1,28 @@
 {
-    "name": "snelling/request",
-    "description": "Simple HTTP request object",
-    "keywords": ["request", "snelling", "onroi"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sam Snelling",
-            "email": "sam@onroi.com"
-        }
-    ],
-    "type": "project",
-    "require": {
-		"php": "7.*"
-    },
-	"require-dev": {
-		"phpunit/phpunit": "5.2.*"
-    },
-	"autoload": {
-        "psr-4": {
-            "Snelling\\": "src/"
-        }
+  "name": "snelling/request",
+  "description": "Simple HTTP request object",
+  "keywords": [
+    "request",
+    "snelling",
+    "onroi"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Snelling",
+      "email": "sam@onroi.com"
     }
+  ],
+  "type": "project",
+  "require": {
+    "php": "7.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Snelling\\": "src/"
+    }
+  }
 }
