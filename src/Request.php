@@ -89,6 +89,20 @@ class Request
     /**
      * @return string
      */
+    public function subdomain(): string
+    {
+        $host   = $this->server()['HTTP_HOST'] ?? '';
+        $pieces = explode('.', $host);
+        if (count($pieces) > 2 && $pieces[0] !== 'www') {
+            return $pieces[0];
+        }
+
+        return '';
+    }
+
+    /**
+     * @return string
+     */
     public function useragent(): string
     {
         $server = $this->server();
